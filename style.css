@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+      box-sizing: border-box;    /*for small content on padding */
+}
+#wrapper{
+    height:100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective:10px;
+}
+#container{
+    position:relative; /* for over lapping*/
+    display: flex;             /* for center the tex*/
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    transform-style: preserve-3d;
+    z-index: -1;               /*for control layering */
+    flex-direction: column;
+  }
+  
+ #background{
+    transform: translateZ(-39px) scale(5);   /*for made distance in z axis */
+ }
+ #foreground{
+    transform: translateZ(-10px) scale(2);
+ }
+ h1{
+    position: absolute;
+    font-size:100px;
+    top:10rem;
+    color:aliceblue;
+    text-shadow: 5px  0px  0px black;
+ }
+  #background,#foreground{
+    position:absolute;
+    height:100%;
+    width:100%;
+    object-fit: cover;
+
+}
+#sechead{
+    font-size: 5rem;
+    padding:0 5rem;
+}
+ #text{
+    font-size:1.5rem;
+    padding:0 10rem;
+    margin:5rem 0; 
+}
+section{
+    background-color: rgb(45,45,45);
+      color: white;
+     padding: 5rem 0;
+}
+ .bg{
+  position:relative;
+  width: 100%;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  height: 450px;
+ }
+ #heading{
+    position: absolute;
+    background-color: aliceblue;
+    color: black;
+    padding:.5rem 2.5rem;
+    top: 50%;
+    left: 50%;
+    transform:translateX(-50%) translateY(-50%);
+    font-size: 3.5rem;
+ }
+
+ .bg1{
+    background-image:url(sport-1.jpg);
+}
+.bg2{
+    background-image:url(sport-2.jpg);
+}
+.bg3{
+    background-image:url(sport-3.jpg);
+}
+
+ 
